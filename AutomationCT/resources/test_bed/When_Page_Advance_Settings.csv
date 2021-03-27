@@ -1,0 +1,33 @@
+######
+##
+# If Time_Zone is selected then Throttle_limit will be disabled so just to check both i am putting ******* as data so that switch case will bypass that
+#
+#
+#
+#
+
+
+mobile push+one time-1,Time_zone:deliver the campaigns the next day,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:********
+mobile push+one time-2,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+mobile push+one time-3,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+mobile push+one time-4,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+mobile push+one time-5,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+web push+one time-1,Time_zone:deliver the campaigns the next day,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check
+
+
+
+sms+one time-1,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+
+#verifyCampaignAction
+mobile push+multiple dates-6,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+
+#verifyCampaignWithRecommendationOfThaiLanguageCatalog(suc-34052)
+mobile push+one time-7,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+
+#SUC33389 VerifyNotificationCount
+suc33389-1,Time_zone:*********,Campaign_do_not_disturb:delay delivery until the end of dnd hours,Campaign_cutoff:check ,Global_throttle_limits:check
+
+#Mobile push single action
+mobile push+single action-test1,Campaign_do_not_disturb:delay delivery until the end of dnd hours
+mobile push+single action-test3,Campaign_do_not_disturb:discard messages scheduled during dnd hours
+

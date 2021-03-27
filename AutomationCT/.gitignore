@@ -1,0 +1,10 @@
+.idea/**
+*.class
+workspace.xml
+target/**
+output/**
+ExtentReportHTML/
+FailedTestsScreenshots/
+.DS_Store
+*.iml
+*.log

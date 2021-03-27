@@ -1,0 +1,62 @@
+{
+  "name": "AutoApiCamp10",
+  "estimate_only": false,
+  "target_mode":"push",
+  "where": {
+    "event_name": "Charged",
+    "from": 20200101,
+    "to": 20200329,
+    "common_profile_properties": {
+      "profile_fields": [
+        {
+          "name": "Customer Type",
+          "operator":"equals",
+          "value": "Platinum"
+        }
+      ]
+    }
+  },
+  "respect_frequency_caps": true,
+  "content": {
+    "title": "Hi!",
+    "body": "How are you doing today?",
+    "platform_specific": {
+      "ios": {
+        "mutable-content": "true",
+        "deep_link": "example.com",
+        "sound_file": "example.caf",
+        "category": "application category//Books",
+        "badge_count": 1,
+        "Key": "Value_ios"
+      },
+      "android": {
+        "background_image": "http://example.jpg",
+        "default_sound": true,
+        "deep_link": "example.com",
+        "large_icon": "http://example.png",
+        "Key": "Value_android",
+        "ttl":24,
+        "wzrk_cid": "AutomationNotificationChannel_DND",
+        "wzrk_bi":"app icon",
+        "wzrk_bc":1
+      }
+    }
+  },
+  "system_control_group_include":false,
+  "control_group":{
+    "type": "campaign",
+    "percentage":10
+  },
+  "wzrk_acts": [{"l":"Action-1","dl":"deep1","id":"01","ico":"app icon"},
+    {"l":"Action-2","dl":"deep2","id":"02","ico":"app icon1"},
+    {"l":"Action-3","dl":"deep3","id":"03","ico":"app icon2"}],
+  "devices": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "respect_throttle":true,
+  "skip_estimate":false,
+  "send_to_all_devices":false,
+  "when": "now"
+}

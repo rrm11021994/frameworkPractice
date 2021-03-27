@@ -1,0 +1,50 @@
+# put any URL like https-//www.google.com instead of https://www.google.com. in the code , replace - by :
+#
+ios,rich_media:single media,single_media_url:https-//www.google.com,sound_file:default os sound,badge_count:10,category:20,deep_link:https-//www.google.com
+android,subtitle:Hello Android Subtitle,image_summary:https-//www.google.com|Hello Summary,large_icon_url:https-//www.google.com,small_app_icon_color:eeee22,deep_link:https-//www.google.com,actions:Hello Action1|1,sound_file:default os sound
+webpush,deep_link:https-//www.google.com,image_link:https-//www.google.com,large_icon_url:https-//www.google.com,small_app_icon_color:#eeee22
+ios,rich_media:single media,single_media_url:https-//www.google.com,sound_file:default os sound,badge_count:10,category:20,deep_link:https-//www.google.com/
+android,subtitle:Hello Android Subtitle,image_summary:https-//www.google.com|Hello Summary,large_icon_url:https-//www.google.com,small_app_icon_color:#eeee22,deep_link:https-//www.google.com,actions:Hello Action1|1,sound_file:default os sound
+customKeyValuePair,key1:CustomValue1,key2:CustomValue2,key3:CustomValue3
+webhookKeyValuePair,key1:WebhookValue1,key2:WebhookValue2,key3:WebhookValue3
+
+
+Mobile push+One time-1,title:@Name @QA.Automation1-DND @QA.Automation2-DND hello-title,message:@Name simple-string,iosDeepLink:@QA.Automation1-DND,androidDeepLink:@QA.Automation2-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+Mobile push+One time-2,title:@Name @QA.Automation1-DND @QA.Automation2-DND hello-title,message:@Name simple-string,iosDeepLink:@QA.Automation1-DND,androidDeepLink:@QA.Automation2-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+Mobile push+One time-3,title:@Name @QA.Automation1-DND @QA.Automation2-DND hello-title,message:@Name simple-string,iosDeepLink:@QA.Automation1-DND,androidDeepLink:@QA.Automation2-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+Mobile push+One time-4,title:@Name @QA.Automation1-DND @QA.Automation2-DND hello-title,message:@Name simple-string,iosDeepLink:@QA.Automation1-DND,androidDeepLink:@QA.Automation2-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+Mobile push+One time-5,title:@Name @QA.Automation1-DND @QA.Automation2-DND hello-title,message:@Name simple-string,iosDeepLink:@QA.Automation1-DND,androidDeepLink:@QA.Automation2-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+
+#verifyCampaignAction
+mobile push+multiple dates-6,title:Name QA.Automation1-DND QA.Automation2-DND hello-title,message:Name simple-string,deepLink:QA.Automation1-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+
+#verifyCampaignWithRecommendationOfThaiLanguageCatalog(suc-34052)
+Mobile push+One time-7,title:@Name hello-title,message:This is message,iosDeepLink:@QA.Automation1-DND,androidDeepLink:@QA.Automation2-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+
+#SUC33389 VerifyNotificationCount
+SUC33389-1,title:Name QA.Automation1-DND QA.Automation2-DND hello-title,message:Name simple-string,iosDeepLink:QA.Automation1-DND,personalisationTitle:hello title,personalisationMessage:hello message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message
+
+
+
+
+#Native Display                                           #upload_image:../test_bed/Images/goku.jpg,
+
+#simple banner
+NativeDisplay+SingleMsg+SimpleBanCon,title:@Name @QA hello,message:@Name @QA simple-string,iosDeepLink:@Name @QA,androidDeepLink:@Name @QA,personalisationTitle:def title,personalisationMessage:def message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message,backgroundcolor:#F41010,personalized_media:www.google.com,customkv:k1-v1 k2-@Name=normaltext k3-v3,personalisationKv:def kv
+
+#Banner with icon
+NativeDisplay+SingleMsg+BanWithIcon,title:@QA hello,message:@Name @QA simple-string,iosDeepLink:@Name @QA,androidDeepLink:@Name @QA,personalisationTitle:def title,personalisationMessage:def message,personalisationIOSDeepLinkMessage:hello ios deep link message,personalisationAndroidDeepLinkMessage:hello ios deep link message,backgroundcolor:#F41010,uploadIcon:default,customkv:k1-v1 k2-@Name=normaltext k3-v3,personalisationKv:def kv,personalized_media:www.google.com
+
+#Carousel Banner with content
+NativeDisplay+SingleMsg+CarouselWithCon,totalslides:3,slide1personalized_media:www.goggle.com,slide1title:@Name hello,slide1message:@Name @Name simple-string,slide1iosDeepLink:@Name @Name,slide1androidDeepLink:@Name @Name,slide1personalisationTitle:def title,slide1personalisationMessage:def message,slide1personalisationIOSDeepLinkMessage:ios def link,slide1personalisationAndroidDeepLinkMessage:android def link,backgroundcolor:#F41010,personalisationKv:def kv,slide2personalized_media:www.goggle.com,slide2title:@Name hello2,slide2message:@Name @Name simple-string2,slide2iosDeepLink:@Name @Name,slide2androidDeepLink:@Name @Name,slide2personalisationTitle:def title,slide2personalisationMessage:def message,slide2personalisationIOSDeepLinkMessage:ios def link,slide2personalisationAndroidDeepLinkMessage:android def link,slide3personalized_media:www.goggle.com,slide3title:@Name hello3,slide3message:@Name @Name simple-string2,slide3iosDeepLink:@Name @Name,slide3androidDeepLink:@Name @Name,slide3personalisationTitle:def title,slide3personalisationMessage:def message,slide3personalisationIOSDeepLinkMessage:ios def link,slide3personalisationAndroidDeepLinkMessage:android def link,customkv:k1-v1 k2-@Name=normaltext k3-v3
+#NativeDisplay+SingleMsg+CarouselWithCon,totalslides:3,slide1personalized_media:www.goggle.com,slide1title:hello1,slide1message:simple-string1,slide1iosDeepLink:www.ios.com1,slide1androidDeepLink:www.android.com1,slide1personalisationTitle:def title,slide1personalisationMessage:def message,slide1personalisationIOSDeepLinkMessage:ios def link,slide1personalisationAndroidDeepLinkMessage:android def link,backgroundcolor:#F41010,customkv:k1-v1 k2-normaltext k3-v3,personalisationKv:def kv,slide2personalized_media:www.goggle.com,slide2title:hello2,slide2message:simple-string2,slide2iosDeepLink:ios2,slide2androidDeepLink:and2,slide2personalisationTitle:def title,slide2personalisationMessage:def message,slide2personalisationIOSDeepLinkMessage:ios def link,slide2personalisationAndroidDeepLinkMessage:android def link,slide3personalized_media:www.goggle.com,slide3title:hello3,slide3message:simple-string3,slide3iosDeepLink:ios3,slide3androidDeepLink:and3xs,slide3personalisationTitle:def title,slide3personalisationMessage:def message,slide3personalisationIOSDeepLinkMessage:ios def link,slide3personalisationAndroidDeepLinkMessage:android def link
+
+#Custom Key Value
+NativeDisplay+SingleMsg+CustomKV,customkv:k1-v1 k2-@Name=normaltext k3-v3,personalisationKv:def val
+
+
+#Mobile Push Single Action
+mobile push+single action-test1,title:Title,message:Message,iosDeepLink:iosDeeplink,androidDeepLink:Andorid Deep link,personalisationTitle:,personalisationMessage:,personalisationIOSDeepLinkMessage:,personalisationAndroidDeepLinkMessage:,backgroundcolor:#F41010,uploadIcon:default,customkv:k1-v1 k2-normaltext k3-v3,personalisationKv:,personalized_media:www.google.com
+mobile push+single action-test2,title:Title,message:Message,iosDeepLink:iosDeeplink,androidDeepLink:Andorid Deep link,personalisationTitle:,personalisationMessage:,personalisationIOSDeepLinkMessage:,personalisationAndroidDeepLinkMessage:,backgroundcolor:#F41010,uploadIcon:default,customkv:k1-v1 k2-normaltext k3-v3,personalisationKv:,personalized_media:www.google.com
+mobile push+single action-test3,title:Title,message:Message,iosDeepLink:iosDeeplink,androidDeepLink:Andorid Deep link,personalisationTitle:,personalisationMessage:,personalisationIOSDeepLinkMessage:,personalisationAndroidDeepLinkMessage:,backgroundcolor:#F41010,uploadIcon:default,customkv:k1-v1 k2-normaltext k3-v3,personalisationKv:,personalized_media:www.google.com
+

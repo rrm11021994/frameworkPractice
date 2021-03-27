@@ -1,0 +1,17 @@
+{
+  "d": [
+    {
+      "objectId": "__hopm",
+      "type": "event",
+      "evtName": "app launched"
+    },
+    {
+      "objectId": "__hopm",
+      "type": "profile",
+      "profileData": {
+        "Email":"omprakash@clevertap.com",
+        "Identity":"opm123"
+      }
+    }
+  ]
+}

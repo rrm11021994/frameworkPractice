@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CriticalDashboardAutomationSuite">
+
+    <test name="AllCriticalTestsSuite" preserve-order="true">
+        <groups>
+            <define name="AllCriticalTestsSuite">
+                <include name="CampaignIntegrationCritical"></include>
+                <include name="RBACCritical"></include>
+                <include name="MobilePushCritical"></include>
+                <include name="CompareToProdCritical"></include>
+<!--                <include name="UsersTestCritical"></include>-->
+                <include name="FindPplCritical"></include>
+<!--                <include name="LoginNegativeScenarioPart2Critical"></include>-->
+<!--                <include name="LoginNegativeScenarioPart1Critical"></include>-->
+                <include name="LoginCritical"></include>
+            </define>
+
+            <run>
+                <include name="AllCriticalTestsSuite"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.clevertap.ui.settings_menu_test.CampaignIntegrationTest"/>
+            <class name="com.clevertap.ui.settings_menu_test.RoleBasedAccessTest"/>
+            <class name="com.clevertap.ui.campaign_tests.MobilePushTests"/>
+            <class name="com.clevertap.ui.CompareToProdTest"/>
+<!--            <class name="com.clevertap.ui.settings_menu_test.UsersTest"/>-->
+            <class name="com.clevertap.ui.segment_menu.FindPeopleTests"/>
+            <class name="com.clevertap.ui.login_test.LoginTests"/>
+<!--            <class name="com.clevertap.ui.login_test.LoginTestNegativeScenariosPart2"/>-->
+<!--            <class name="com.clevertap.ui.login_test.LoginTestNegativeScenariosPart1"/>-->
+        </classes>
+    </test>
+
+    <listeners>
+
+        <!--below 2 lines for listner should be enabled for maven only, otherwise 2 reports are displayed for each test-->
+        <!--<listener class-name="org.CleverTap.reportUtilstUtils.listeners.TestListener"/>-->
+        <listener class-name="com.clevertap.utils.report_utils.listeners.AnnotationTransformer"/>
+    </listeners>
+
+</suite>

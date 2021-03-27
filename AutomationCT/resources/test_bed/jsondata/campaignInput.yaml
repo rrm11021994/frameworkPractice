@@ -1,0 +1,82 @@
+#Input file to create a campaign.
+#date format: YYYYMMDD time format: hh:mm AM/PM
+# based on user requirement, user can provide the input as well and leave the field blank as well. both conditions are handled.
+
+channel:
+type:
+csv_key:
+when:
+  message_type: single message
+  campaign_start_type:         #possible values: 1. now  2. later; fill the date and time paras only in case of later
+  campaign_start_date:      # make it dynamic else every time need to change. cant have gap of more than a month
+  campaign_start_time:      # if required put time as 03:30 AM
+  campaign_end_type:    #for trigger: select date and time  2. for recurring: select date
+  campaign_end_date:
+  campaign_end_time:
+  campaign_end_occurences: 10       #Only in recurring case
+  campaign_delivery:
+  campaign_delivery_fixed_time:
+  campaign_delay: delay             #only possible values   1. delay 2. no delay
+  campaign_delay_by: 10               #must be an integer
+  campaign_delay_param:             #possible values: 1. minutes  2. hours  3. days
+#  advanced:
+  user_timezone: true
+  user_timezone_action: drop campaign       #allowed 2 values: 1. drop campaign 2. deliver the next day.
+  campaign_dnd: true
+  campaign_dnd_start_time:
+  campaign_dnd_end_time:
+  campaign_cutoff: true
+  campaign_cutoff_time:
+  advanced:
+        Time_zone:
+        Campaign_do_not_disturb:
+        Campaign_cutoff:
+        Global_throttle_limits:            #if time zone will be set then global throlle limit can not be set. At a time any one can be set
+  how_often:
+who:
+  send_campaign_to: all users       #only 3 values 1. all users 2. only x users 3. only x users overall. 3rd case only for trigger campaigns.
+  safety_check: 10                  #safety_check and overall_safety_check must be integers.
+  overall_safety_check: 100           #only in case of trigger and recurring campaign
+  device_os:
+  device_type:
+  campaign_reach_type:
+  segment_select_type:
+  limit_users_cap: 1000
+  user_who_like_prop:
+  user_who_like_event:
+  user_who_did:
+  user_who_did_not_do:
+  saved_segment_type:
+what:
+  message_to_be_selected:
+  sms_message: test message
+  push_title: Test mobile push
+  push_message: check mobile push automation
+  push_androido_channel: BRTesting
+  email_template_number: 2
+  email_from_name: Test automation
+  email_subject: Test create email campaign
+  inapp_title: 1-Sep-19 regression testing
+  select_message_type:
+  select_template_type:
+  template_button_type:
+  ios:
+    rich_media:
+    sound_file:
+    badge_count:
+    category:
+    deep_link:
+  android:
+        subtitle:
+        image_summary:
+        large_icon_url:
+        small_app_icon_color:
+        deep_link:
+        actions:
+        sound_file:
+setup:
+    push_android_ttl: 4
+    control_group:
+         system_control_group:
+         custom_control_group:
+campaign_name: AutoCampaign

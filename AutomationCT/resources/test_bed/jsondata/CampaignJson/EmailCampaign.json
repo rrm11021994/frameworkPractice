@@ -1,0 +1,39 @@
+{
+  "devices": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "estimate_only": false,
+  "target_mode": "email",
+  "when": "now",
+  "content": {
+    "subject": "Welcome",
+    "sender_name": "CleverTap",
+    "body": "<div>Your HTML content for the email</div>"
+  },
+  "name": "AutomationCampaignViaEmail31Mar-1",
+  "where": {
+    "event_name": "App Launched",
+    "from": 20200219,
+    "to": 20200331,
+    "common_profile_properties": {
+      "profile_fields": [
+        {
+          "name": "Customer Type",
+          "operator":"equals",
+          "value": "Platinum"
+        }
+      ]
+    }
+  },
+  "system_control_group_include": true,
+  "control_group": {
+    "type": "campaign",
+    "percentage": 5
+  },
+  "respect_throttle": true,
+  "from": 20200226,
+  "respect_frequency_caps": true,
+  "to": 20200326
+}

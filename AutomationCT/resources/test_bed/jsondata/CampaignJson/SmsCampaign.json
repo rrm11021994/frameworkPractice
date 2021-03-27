@@ -1,0 +1,32 @@
+{
+  "name": "My Sms API campaign",
+  "estimate_only": false,
+  "target_mode":"sms",
+  "where": {
+    "event_name": "Charged",
+    "from": 20200101,
+    "to": 20200301,
+    "common_profile_properties": {
+      "profile_fields": [
+        {
+          "name": "Customer Type",
+          "operator":"equals",
+          "value": "Platinum"
+        }
+      ]
+    }
+  },
+  "respect_frequency_caps": false,
+  "content": {
+    "body": "Automation Sms body"
+  },
+  "system_control_group_include":true,
+  "control_group":{
+    "type": "campaign",
+    "percentage":5
+  },
+  "respect_throttle":true,
+  "provider_nick_name":"Test sms provider roy",
+  "skip_estimate":false,
+  "when": "now"
+}

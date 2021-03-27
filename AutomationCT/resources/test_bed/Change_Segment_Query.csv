@@ -1,0 +1,81 @@
+#whoLikeEventProp
+#whoLikeEvent
+#whereItOccurs
+#whoLikeHavingProp
+#whoLikeHavingPropOperator
+#whoLikeHavingPropValue
+#whoDidEvent
+#whoDidWhere
+#whoDidOperator
+#whoDidValue
+#whoDidNotEvent
+#commonProp
+
+
+
+#Mobile push and one time
+Mobile push+One time-1,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties
+Mobile push+One time-2,whoLikeEventProp:Event property,whoLikeEvent:Notification Viewed,whereItOccurs:predominantly,whoLikeHavingProp:CT App Version,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:8.0,whoDidEvent:Cover Image,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Push Impressions,commonProp:User Properties
+Mobile push+One time-3,whoLikeEventProp:Event property,whoLikeEvent:Notification Clicked,whereItOccurs:at least,whereItOcursFrequency:10,whoLikeHavingProp:Campaign type,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:abcdef,whoDidEvent:Charged,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Charged,commonProp:User Properties
+Mobile push+One time-4,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties
+Mobile push+One time-5,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties
+
+#Mobile push and multiple dates
+Mobile push+Multiple dates-6,whoLikeEventProp:Day of the week,whoLikeEvent:Product Viewed,whereItOccurs:predominantly,dayOfWeek:Wednesday,whoDidEvent:Push Impressions,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Notification Sent,commonProp:Geography
+
+
+#Mobile push and Recurring
+Mobile push+Recurring-1,whoLikeEventProp:Day of the week,whoLikeEvent:Product Viewed,whereItOccurs:predominantly,dayOfWeek:Tuesday,whoDidEvent:Push Impressions,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Notification Sent,commonProp:Geography
+Mobile push+Recurring-2,whoLikeEventProp:Event property,whoLikeEvent:Notification Viewed,whereItOccurs:predominantly,whoLikeHavingProp:CT OS Version,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:8.0,whoDidEvent:Cover Image,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Push Impressions,commonProp:User Properties
+Mobile push+Recurring-3,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties
+
+
+
+#Mobile push and inaction within time
+Mobile push+Inaction within time-1,AsSoonAsUserDoes:App Launched,whoDidEvent:Charged,whoDidOccurence:Last Time,whoDidNotEvent:Header,commonProp:User Properties
+Mobile push+Inaction within time-2,AsSoonAsUserDoes:Cover Image,whoDidEvent:App Uninstalled,whoDidOccurence:First Time,whoDidNotEvent:Interstitial,commonProp:User Properties
+Mobile push+Inaction within time-3,AsSoonAsUserDoes:Footer,whoDidEvent:Added To Cart,whoDidOccurence:Occurrences,whoDidNotEvent:Interstitial Gif,commonProp:User Properties
+Mobile push+Inaction within time-4,AsSoonAsUserDoes:Header,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video,commonProp:Geography
+
+#Mobile push and Single action
+Mobile push+Single action-1,AsSoonAsUserDoes:Header,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video,commonProp:Geography
+Mobile push+Single action-2,AsSoonAsUserDoes:Cover Image,whoDidEvent:App Uninstalled,whoDidOccurence:First Time,whoDidNotEvent:Interstitial,commonProp:User Properties
+mobile push+single action-test1,AsSoonAsUserDoes:App Installed
+mobile push+single action-test2,AsSoonAsUserDoes:App Installed,whoDidEvent:App Uninstalled,whoDidOccurence:First Time,whoDidNotEvent:Charged,commonProp:Geography
+mobile push+single action-test3,AsSoonAsUserDoes:App Installed,whoDidEvent:App Uninstalled,whoDidOccurence:First Time,whoDidNotEvent:Charged,commonProp:User Properties
+
+#Mobile inApp
+Mobile inapp-1,AsSoonAsUserDoes:Footer,whoDidEvent:Half Interstitial,whoDidOccurence:First Time,whoDidNotEvent:App Installed,commonProp:Geography
+Mobile inapp-2,AsSoonAsUserDoes:Header,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video,commonProp:Geography
+
+
+#SMS and one time
+sms+one time-1,whoLikeEventProp:Event property,whoLikeEvent:Notification Viewed,whereItOccurs:predominantly,whoLikeHavingProp:CT App Version,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:8.0,whoDidEvent:Cover Image,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Push Impressions,commonProp:User Properties
+sms+one time-2,whoLikeEventProp:Event property,whoLikeEvent:App Launched,whereItOccurs:predominantly,whoLikeHavingProp:CT OS Version,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:8.0,whoDidEvent:Charged,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Charged,commonProp:User Properties
+
+
+#app inbox and one time
+app inbox+one time-1,whoLikeEventProp:Event property,whoLikeEvent:Notification Viewed,whereItOccurs:predominantly,whoLikeHavingProp:CT App Version,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:8.0,whoDidEvent:Cover Image,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Push Impressions,commonProp:User Properties
+app inbox+one time-2,whoLikeEventProp:Event property,whoLikeEvent:App Launched,whereItOccurs:predominantly,whoLikeHavingProp:CT OS Version,whoLikeHavingPropOperator:equals,whoLikeHavingPropValue:8.0,whoDidEvent:Charged,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Charged,commonProp:User Properties
+app inbox+multiple dates-3,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties
+
+#Email
+email+one time-1,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties
+
+#WhatsApp
+whatsapp+one time-1,whoLikeEventProp:Event property,whoLikeEvent:Product viewed,whereItOccurs:predominantly,whoLikeHavingProp:Vendor,whoLikeHavingPropOperator:contains,whoLikeHavingPropValue:abcd,whoDidEvent:Cover Portrait,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:10,whoDidNotEvent:Interstitial,commonProp:User Properties
+whatsapp+single action-1,AsSoonAsUserDoes:add to cart,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video,commonProp:Geography
+whatsapp+inaction within time-1,AsSoonAsUserDoes:add to cart,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Landscape,commonProp:Geography
+whatsapp+on a date/time-1,AsSoonAsUserDoes:Charged,EventProperty:date,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video ios,commonProp:Geography
+
+#WebPush
+web push+one time-1,whoLikeEventProp:Event property,whoLikeEvent:Product Viewed,whereItOccurs:predominantly,whoLikeHavingProp:Vendor,whoLikeHavingPropOperator:contains,whoLikeHavingPropValue:abcd,whoDidEvent:Notification Sent,whoDidWhere:Count,whoDidOperator:less than or equals,whoDidValue:100,whoDidNotEvent:Interstitial,commonProp:User Properties
+web push+single action-1,AsSoonAsUserDoes:App Launched,whoDidEvent:App Launched,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video ios,commonProp:Geography
+web push+inaction within time-1,AsSoonAsUserDoes:App Launched,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video ios,commonProp:Geography
+web push+on a date/time-1,AsSoonAsUserDoes:Product viewed,EventProperty:date,whoDidEvent:App Launched,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video ios,commonProp:Geography
+
+#Mobile push and single action+AppInbox
+mobile push+Single action+AppInbox-1,AsSoonAsUserDoes:Header,whoDidEvent:App Installed,whoDidOccurence:Last Time,whoDidNotEvent:Interstitial Video ios,commonProp:Geography
+
+#verifyCampaignWithRecommendationOfThaiLanguageCatalog(suc-34052)
+Mobile push+One time-7,whoLikeEventProp:Time of the day,whoLikeEvent:App Installed,whereItOccurs:at least,whereItOcursFrequency:10,from:10 AM,to:4 PM,whoDidEvent:Half Interstitial,whoDidWhere:Property sum of,whoDidWhereProp:CT App Version,whoDidOperator:greater or equals,whoDidValue:100,whoDidNotEvent:Footer,commonProp:User Properties

@@ -1,0 +1,36 @@
+{
+  "Clevertap": {
+    "employess": [
+      {
+        "employee": {
+          "name": "John",
+          "birth": {
+            "city": "mumbai",
+            "pincode": 111111,
+            "NRI": false
+          },
+          "MobileNo": [
+            "123",
+            "456",
+            "789"
+          ]
+        }
+      },
+      {
+        "employee": {
+          "name": "Jane",
+          "birth": {
+            "city": "SA",
+            "pincode": 0000,
+            "NRI": true
+          },
+          "MobileNo": [
+            "3333",
+            "21",
+            "619"
+          ]
+        }
+      }
+    ]
+  }
+}

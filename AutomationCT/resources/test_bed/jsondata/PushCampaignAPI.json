@@ -1,0 +1,27 @@
+{
+  "name": "CampaignThruAPI",
+  "estimate_only": false,
+  "target_mode":"push",
+  "where": {
+    "event_name": "App Launched",
+    "from": 20191210,
+    "to": 20191210
+  },
+  "respect_frequency_caps": true,
+  "respect_throttle" : true,
+  "content": {
+    "title": "abc!",
+    "body": "How are you doing today?abc",
+    "platform_spectfic": {
+      "android" : {
+        "wzrk_cid": "BRTesting"
+      }
+    }
+  },
+  "devices": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "when": "now"
+}

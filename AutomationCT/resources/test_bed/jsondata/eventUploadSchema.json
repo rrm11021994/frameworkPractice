@@ -1,0 +1,15 @@
+{
+  "d":[
+    {
+      "evtName":"",
+      "evtData":{
+        "Category":"",
+        "Product name":"",
+        "Price": "",
+        "Currency":""
+      },
+      "type":"",
+      "objectId":""
+    }
+  ]
+}

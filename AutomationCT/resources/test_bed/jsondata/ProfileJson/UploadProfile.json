@@ -1,0 +1,15 @@
+{
+  "d": [
+    {
+      "objectId": "__7f92addc1ce243c59cfa65d5792c9477",
+      "ts": 1566984989,
+      "type": "profile",
+      "profileData": {
+        "Name": "Campaign automation user",
+        "email":"Campaignautomationuser@clevertap.com",
+        "Customer Type": "Platinum",
+        "test.dot7": "test.value"
+      }
+    }
+  ]
+}
